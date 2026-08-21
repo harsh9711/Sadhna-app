@@ -8,9 +8,10 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+  "image": "./assets/icon.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#ffffff"
+},
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.yourorg.dayroutine"
@@ -31,7 +32,10 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {}
+      "router": {},
+      "eas": {
+        "projectId": "8a5c487f-1eb3-43f6-89e0-b44a0309855f"
+      }
     }
   }
 }
