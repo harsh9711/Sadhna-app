@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Day Routine",
+    "slug": "day-routine-app",
+    "version": "1.0.0",
+    "scheme": "dayroutine",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourorg.dayroutine"
+    },
+    "android": {
+      "package": "com.yourorg.dayroutine",
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "632f58cc-9031-4e9c-a47f-eb5593228523"
+      }
+    },
+    "owner": "hs1233455"
+  }
+}

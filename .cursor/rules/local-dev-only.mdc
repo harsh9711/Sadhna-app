@@ -1,0 +1,27 @@
+---
+description: Approved local-only dev commands for this project
+alwaysApply: true
+---
+
+# No tunnels, no Cloudflare
+
+Never run Expo (or anything else) through a tunnel or Cloudflare. Tunnel
+providers (ngrok, Cloudflare Tunnel) are not on the approved software list.
+
+```bash
+# ❌ BAD — tunnel / Cloudflare traffic
+npx expo start --tunnel
+node node_modules/.bin/expo start --tunnel
+cloudflared tunnel run
+
+# ✅ GOOD — LAN / localhost only
+npx expo start
+npx expo start --localhost
+npx expo start --clear
+```
+
+Rules:
+- Never pass `--tunnel` to `expo start`; use LAN (default) or `--localhost`.
+- Do not install or invoke `@expo/ngrok`, `ngrok`, or `cloudflared`.
+- Only use tools from the approved software list; if a task seems to need an
+  unapproved tool, ask instead of installing it.
